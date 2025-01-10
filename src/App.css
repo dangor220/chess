@@ -10,3 +10,26 @@
   width: 100dvw;
   height: 100dvh;
 }
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(4rem * 8);
+  height: calc(4rem * 8);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.black {
+  background-color: #633214;
+}
+
+.white {
+  background-color: #dbba8b;
+}
