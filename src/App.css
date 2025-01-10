@@ -1,29 +1,31 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(28, 21, 29);
 }
 
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
-  width: calc(4rem * 8);
-  height: calc(4rem * 8);
+  width: 80vmin;
+  height: 80vmin;
 }
 
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: calc(100% / 8);
+  height: calc(100% / 8);
 }
 
 .black {
@@ -32,4 +34,18 @@
 
 .white {
   background-color: #dbba8b;
+}
+
+@media (max-width: 600px) {
+  .board {
+    width: 90vmin;
+    height: 90vmin;
+  }
+}
+
+@media (min-width: 1200px) {
+  .board {
+    width: 60vmin;
+    height: 60vmin;
+  }
 }
