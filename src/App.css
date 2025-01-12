@@ -2,22 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(28, 21, 29);
+  background-color: #312e2b;
 }
 
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
-  width: 80vmin;
-  height: 80vmin;
+  width: 90vmin;
+  height: 90vmin;
 }
 
 .cell {
@@ -27,20 +27,19 @@
   width: calc(100% / 8);
   height: calc(100% / 8);
 }
+.cell img {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+}
 
 .black {
-  background-color: #633214;
+  background-color: #76472a;
 }
 
 .white {
-  background-color: #dbba8b;
-}
-
-@media (max-width: 600px) {
-  .board {
-    width: 90vmin;
-    height: 90vmin;
-  }
+  background-color: #dec198;
 }
 
 @media (min-width: 1200px) {
