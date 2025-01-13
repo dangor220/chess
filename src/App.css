@@ -32,6 +32,8 @@
   width: 80%;
   height: 80%;
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 .black {
@@ -40,6 +42,10 @@
 
 .white {
   background-color: #dec198;
+}
+
+.selected {
+  background-color: #452612bc;
 }
 
 @media (min-width: 1200px) {
